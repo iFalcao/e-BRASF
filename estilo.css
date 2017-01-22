@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+li {
+	display: inline;
+}
+
+header {
+	background-color: #CCC;
+}
+
+footer {
+	background-color: #7275EB;
+}
