@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-
+	box-sizing: border-box;
 }
 
 li {
@@ -9,9 +9,32 @@ li {
 }
 
 header {
-	background-color: #CCC;
+	min-height: 500px;
+	background-image: url("http://www.designbolts.com/wp-content/uploads/2012/11/Free-medium-dark-Tileable-Pattern-Website-Background.jpg");
+}
+
+.cabeca {
+	width: 1200px;
+	margin: auto;
 }
 
 footer {
 	background-color: #7275EB;
+}
+
+.header-img {
+	height: 50px;
+}
+
+.header-btn {
+	text-decoration: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin: 4px;
+	padding: 5px;
+	position: relative;
+	top: 10px;
+	float: right;
+	clear: left;
+	font-family: "Roboto", sans-serif;
+	color: white;
 }
