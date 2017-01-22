@@ -33,15 +33,43 @@ header {
 	color: white;
 }
 
-
-footer {
-	background-color: #7275EB;
+.heading h1 {
+	text-align: center;
+	color: white;
+	margin: 50px 0;
+	font-size: 49px;
+	font-family: "Bree Serif", serif;
+	word-spacing: 0.4em;
 }
 
-#heading {
+.heading h2 {
 	text-align: center;
 	color: white;
 	margin: 30px 0;
-	font-size: 30px;
-	font-style: "Roboto", sans-serif;
+	font-family: "Bree Serif", serif;
+	word-spacing: 0.3em;
+}
+
+.opcoes {
+	height: 500px;
+}
+
+footer {
+	background: url("http://argushd.com/wp-content/uploads/2016/03/Grey-website-background-1024x575.jpg") no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	font-family: "Consolas", serif;
+	font-size: 14px;
+	height: 50px;
+}
+
+footer li {
+	margin: 5px;
+	display: inline;
+}
+
+.btn_foot_fb , .btn_foot_em {
+	color: yellow;
+	text-decoration: none;
 }
