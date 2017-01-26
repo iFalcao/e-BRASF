@@ -43,6 +43,7 @@ header {
 
 .header-btn:hover {
 	color: #CCC;
+	text-decoration: underline;
 }
 
 .heading {
@@ -112,13 +113,62 @@ article > p {
 	text-align: center;
 }
 
+.planos {
+	height: 400px;
+	background-color: white;
+	margin: 100px 0px;
+}
 
+.planos::after {
+	content: "";
+	clear: both;
+}
 
+.plan {
+	text-align: center;
+	float: left;
+	width: 370px;
+	margin-right: 45px;
+	height: 400px;
+	background-color: #f8feff;
+}
 
+.plan h2{
+	color: white;
+	background-color: #4679AB;
+	font-size: 38px;
+	margin-bottom: 15px;
+	font-family: "Bree Serif", sans-serif;
+	letter-spacing: 0.05em;
+}
 
+.plan h3 {
+	font-size: 34px;
+	font-family: "Bree Serif", sans-serif;
+	margin-bottom: 25px;
+}
 
+.plan li {
+	list-style: none;
+	margin: 3px 0;
+	font-size: 18px;
+	font-family: "Bree Serif", sans-serif;
+}
 
+.plan a {
+	margin-top: 30px;
+	text-decoration: none;
+	padding: 16px 20px;
+	display: inline-block;
+	background-color: green;
+	color: white;
+	font-size: 18px;
+}
 
+.plan a:hover {
+	padding: 24px 30px;
+	background-color: #0e6400;
+}
 
 
 footer {
@@ -128,8 +178,9 @@ footer {
 .contact {
 	font-family: "Roboto", serif;
 	padding: 5px 0 2px 5px;
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: bold;
+	width: 140px;
 	color: DarkMagenta;
 	border-bottom: 2px solid black;
 	margin-bottom: 2px;
