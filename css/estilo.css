@@ -9,68 +9,71 @@ body {
 	font-size: 14px;
 }
 
-header {
-	height: 440px;
-	width: 1200px;
-	margin: 0 auto;
-	border-bottom: 1px solid black;
-}
-
-.cabeca li, footer li{
-	display: inline;
-}
-
-.header-img {
-	margin: 5px 10px 0px 10px;
+/* COMEÇO DA BARRA DE NAVEGAÇÃO */
+.nav li{
+	font-size: 150%;
+	list-style: none;
+	float: right;
+	margin: 1.5% 1% 1% 1%;
 }
 
 .header-btn {
 	text-decoration: none;
-	margin: 20px 10px;
-	padding: 5px;
-	float: right;
-	font-family: "Roboto", sans-serif;
-	font-size: 17px;
+	color: darkcyan;
 }
 
 .header-btn:hover {
-	color: #CCC;
-	text-decoration: underline;
-}
-
-.heading {
-	text-align: center;
-	font-family: "Bree Serif", serif;
-	word-spacing: 0.3em;
-}
-
-.heading h1 {
-	margin: 60px 0 40px 0;
-	font-size: 65px;
-	word-spacing: 0.3em;
-}
-
-.heading h2 {
-	margin-bottom: 30px;
-	font-size: 30px;
-	font-weight: normal;
-}
-
-.btn-cad {
-	padding: 15px;
-	color: white;
-	font-size: 20px;
-	border-radius: 30px;
+	color: DarkMagenta;
+	padding: 10%;
 	text-decoration: none;
-	background-color: #20CB42;
-	position: relative;
-	top: 55px;
+}
+/* FINAL DA BARRA DE NAVEGAÇÃO */
+
+
+/* COMEÇO DA PARTE DE APRESENTAÇÃO - PRINCIPAL */
+.apresentacao {
+	margin-top: 5%;
+	text-align: center;
+	font-family: "Bree Serif", Helvetica, sans-serif;
+	border-bottom: 2px solid darkcyan;
 }
 
-.btn-cad:hover {
+.apresentacao h1 {
+	font-size: 350%;
+	margin-bottom: 1%;
+}
+
+.apresentacao h2 {
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 200%;
+}
+
+.apresentacao a {
+	font-size: 150%;
+	background-color: green;
+	color: #FFF;
+	display: inline-block;
+	padding: 5%;
+	margin-top: 5%;
+	margin-bottom: 0.5%;
+	border-radius: 15px;
+}
+
+.apresentacao a:hover { 
+	text-decoration: none;
 	background-color: #CCC;
 	color: green;
 }
+
+@media (min-width: 768px) {
+	.apresentacao a {
+		padding: 2%;
+		margin-top: 3%;
+	}
+}
+/* FINAL DA PARTE DE APRESENTAÇÃO - PRINCIPAL */
+
 
 .chamativos {
 	margin-top: 70px;
@@ -105,6 +108,7 @@ article > p {
 	text-align: center;
 }
 
+/* COMEÇO DOS PLANOS */
 .plan {
 	text-align: center;
 	font-family: "Bree Serif", Helvetica, sans-serif;
@@ -151,6 +155,8 @@ article > p {
 		border-right: 0;
 	}
 }
+/* FINAL DOS PLANOS */
+
 
 .contact {
 	font-family: "Roboto", serif;
