@@ -1,133 +1,123 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Brasf | União Global</title>
+		<title>Quans - Every Answer for your questions</title>
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto" rel="stylesheet">
-		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway" rel="stylesheet">
 	</head>
-
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="nav col-xs-12">
-					<ul>
-						<img src="Images/logomarca.jpg" height="60" 
-									width="60" alt="Logo" \>
-						<li> <a class="header-btn" href="#" target="_blank"> 
-						      Contato </a> </li>
-						<li> <a class="header-btn" href="#" target="_blank">
-						      Saiba Mais </a> </li>
-						<li> <a class="header-btn" href="#" target="_blank">
-						      Planos </a> </li>
-					</ul>
-				</div>
+		
+		<header class="layout-cabecalho  layout-cabecalho--home"> 
+			<div class="container">
+				<nav class="navegacao">
+					<img class="logomarca" src="pics/logomarca.jpg" height="70" width="70" alt="Logomarca BRASF">
+					
+					<div class="navegacao__menu">
+						<button class="botao-chaveador  js-chave">
+							<img src="pics/menu.png" height="50" width="50" alt="botao-chaveador">	
+						</button>
+						
+						<ul class="menu  js-menu">
+							<li class="menu__item"> 
+								<a class="menu__botao" href="#" target="_blank">Contato</a> 
+							</li>
+							<li class="menu__item"> 
+								<a class="menu__botao" href="#">Saiba Mais</a> 
+							</li>
+							<li class="menu__item"> 
+								<a class="menu__botao" href="#planos">Planos</a>   
+							</li>
+							<li class="menu__item"> 
+								<a class="menu__botao  menu__botao--login" href="#">Login</a>   
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
+		</header>
+		
+		
+		<div class="layout-apresentacao">
+			<div class="container">
 					<div class="apresentacao">
-						<h1>BRASF União Global</h1>
-						<h2>Venha fazer parte do grupo<br>que mais cresce no Brasil</h2>
+						<h1 class="apresentacao__titulo">BRASF</h1>
+						<h2 class="apresentacao__subtitulo">Venha fazer parte do grupo<br>que mais une em harmonia no Brasil</h2>
 						<footer>
-							<a href="#">Cadastre-se</a>
+							<a class="apresentacao__botao-cad" href="#">Cadastre-se</a>
 						</footer>
 					</div>
-				</div>
 			</div>
 		</div>
 		
-		<div class="chamativos">
+		
+		<div id="planos" class="layout-planos">
 			<div class="container">
-				<article>
-					<img src="Images/globo.png" width="70" height="70" alt="dinheiro">
-					<p>Expanda as fronteiras da sua empresa e seja reconhecido pelo mercado</p>
-				</article>
-				<article>
-					<img src="Images/dinheiro.png" width="70" height="70" alt="dinheiro">
-					<p>Aumente seu número de clientes em todo o Brasil com apenas alguns cliques</p>
-				</article>
-				<article>
-					<img src="Images/acordo2.png" width="70" height="70" alt="dinheiro">
-					<p>Caso não esteja satisfeito, nós garantimos seu dinheiro de volta</p>
-				</article>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="plan col-md-4">
-					<h2>Micro</h2>
-					<h3>R$ 49/mês</h3>
-					<ul>
-						<li>Sem página própria</li>
-						<li>Presente em alguns MarketPlaces</li>					
-						<li>Acesso seguro</li>
-						<li>Sem Fidelidade</li>
-						<li>1 Banco de Dados</li>
-						<li>Acompanhamento mensal das vendas</li>
-					</ul>
-					<footer>
-						<a href="#">Assine</a>
-					</footer>
-				</div>
+				<div class="row">
 					
-				<div class="plan col-md-4" style="margin-left: 3px solid red">
-					<h2>Pequena</h2>
-					<h3>R$ 79/mês</h3>
-					<ul>
-						<li>e-Commerce</li>
-						<li>Presente em alguns MarketPlaces</li>
-						<li>Acesso seguro</li>
-						<li>Sem Fidelidade</li>
-						<li>3 Bancos de Dados</li>
-						<li>Acompanhamento semanal das vendas</li>
-					</ul>
-					<footer>
-						<a href="#">Assine</a>
-					</footer>
-				</div>
+					<div class="col-md-4">
+						<article class="plano">
+							<h2 class="plano__titulo">Micro</h2>
+							<h3 class="plano__preco">R$ 49/mês</h3>
+							<ul class="plano__caracteristicas">
+								<li>Sem página própria</li>
+								<li>Presente em alguns MarketPlaces</li>					
+								<li>Acesso seguro</li>
+								<li>Sem Fidelidade</li>
+								<li>1 Banco de Dados</li>
+								<li>Acompanhamento mensal das vendas</li>
+							</ul>
+							<footer class="plano__rodape">
+								<a class="botao" href="#">Assine</a>
+							</footer>
+						</article>
+					</div>
+						
+					<div class="col-md-4">
+						<article class="plano">
+							<h2 class="plano__titulo">Pequena</h2>
+							<h3 class="plano__preco">R$ 79/mês</h3>
+							<ul class="plano__caracteristicas">
+								<li>e-Commerce</li>
+								<li>Presente em alguns MarketPlaces</li>
+								<li>Acesso seguro</li>
+								<li>Sem Fidelidade</li>
+								<li>3 Bancos de Dados</li>
+								<li>Acompanhamento semanal das vendas</li>
+							</ul>
+							<footer class="plano__rodape">
+								<a class="botao" href="#">Assine</a>
+							</footer>
+						</article>
+					</div>
+					
+					<div class="col-md-4" style="border-right: 0">
+						<article class="plano">
+							<h2 class="plano__titulo">Grande</h2>
+							<h3 class="plano__preco">R$ 129/mês</h3>
+							<ul class="plano__caracteristicas">
+								<li>e-Commerce</li>
+								<li>Presente em todos MarketPlaces</li>
+								<li>Acesso seguro</li>
+								<li>Sem Fidelidade</li>
+								<li>5 Bancos de Dados</li>
+								<li>Acompanhamento diário das vendas</li>
+							</ul>
+							<footer class="plano__rodape">
+								<a class="botao" href="#">Assine</a>
+							</footer>
+						</article>
+					</div>
 				
-				<div class="plan col-md-4" style="border-right: 0;">
-					<h2>Grande</h2>
-					<h3>R$ 129/mês</h3>
-					<ul>
-						<li>e-Commerce</li>
-						<li>Presente em todos MarketPlaces</li>
-						<li>Acesso seguro</li>
-						<li>Sem Fidelidade</li>
-						<li>5 Bancos de Dados</li>
-						<li>Acompanhamento diário das vendas</li>
-					</ul>
-					<footer>
-						<a href="#">Assine</a>
-					</footer>
-				</div>
-			</div>	
+				</div>	
+			</div>
 		</div>
 
-		<footer>
-			<div class="container">
-				<p class="contact">Contato</p>
-				<ul>
-					<li>
-						<a href="https://www.facebook.com/suzart.falcao" target="_blank">
-							<img class="img-cont" src="http://seeklogo.com/images/F/facebook-logo-C64946D6D2-seeklogo.com.png" width="50" height="50" alt="link facebook">
-						</a>
-					</li>	
-					<li>
-						<a href="mailto:vbsfalcao@gmail.com" target="_blank">
-							<img class="img-cont" src="http://vectorlogofree.com/wp-content/uploads/2015/07/gmail-logo-400x400.jpg" width="50" height="50" alt="link email">
-						</a>
-					</li>
-				</ul>
-				
-			</div>
-		</footer>
+		<script src="javascript/app.js"></script>
 
 	</body>
 </html>

@@ -4,171 +4,298 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-family: Helvetica, sans-serif;
 }
 
-/* COMEÇO DA BARRA DE NAVEGAÇÃO */
-.nav li{
-	font-size: 150%;
-	list-style: none;
+
+
+/*******************\
+ NAVEGAÇÃO
+\*******************/
+.navegacao {
+}
+
+.navegacao__menu {
 	float: right;
-	margin: 1.5% 1% 1% 1%;
 }
 
-.header-btn {
+
+
+
+/*******************\
+ BOTÃO DE NAVEGAÇÃO
+\*******************/
+.botao-chaveador {
+	background: none;
+	border: 0;
+
+	outline: none;
+}
+
+@media(min-width: 992px) {
+	.botao-chaveador {
+		display: none;
+	}
+}
+
+
+
+/*******************\
+ MENU DE NAVEGAÇÃO
+\*******************/
+.menu {
+	margin: 0;
+
+	font-family: Raleway, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.7rem;
+	list-style: none;
+}
+
+@media(max-width: 991px) {
+	.menu {
+		position: fixed;
+		top: 80px;
+		right: 0;
+		bottom: 0;
+
+		display: none;
+		height: 250px;
+		width: 200px;
+		margin: 0;
+		border: 2px solid #eee;
+
+		background-color: #fbfbfb;
+
+		font-size: 1.4rem;
+		text-align: center;
+
+		list-style: none;
+	}
+
+	.menu__item{
+		display: block;
+		
+		font-size: 1.9rem;
+		line-height: 3;
+
+		list-style: none;
+	}
+
+	.menu--exibindo {
+		display: block;
+	}
+}
+
+@media(min-width: 992px) {
+	.menu__item {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	.menu__botao--right {
+		padding-right: 0;
+	}
+}
+
+.menu__botao {
 	text-decoration: none;
 	color: darkcyan;
 }
 
-.header-btn:hover {
-	color: DarkMagenta;
-	padding: 10%;
-	text-decoration: none;
-}
-/* FINAL DA BARRA DE NAVEGAÇÃO */
+.menu__botao--login {
+	padding: 14px 16px;
+	border-radius: 5px;
+	margin-top: 20px;
 
-
-/* COMEÇO DA PARTE DE APRESENTAÇÃO - PRINCIPAL */
-.apresentacao {
-	margin-top: 5%;
-	text-align: center;
-	font-family: "Bree Serif", Helvetica, sans-serif;
-	border-bottom: 2px solid darkcyan;
-}
-
-.apresentacao h1 {
-	font-size: 350%;
-	margin-bottom: 1%;
-}
-
-.apresentacao h2 {
-	margin-top: 0;
-	font-weight: normal;
-	font-size: 200%;
-}
-
-.apresentacao a {
-	font-size: 150%;
 	background-color: green;
 	color: #FFF;
-	display: inline-block;
-	padding: 5%;
-	margin-top: 5%;
-	margin-bottom: 0.5%;
-	border-radius: 15px;
 }
 
-.apresentacao a:hover { 
+.menu__botao:hover {
+	color: DarkMagenta;
 	text-decoration: none;
-	background-color: #CCC;
-	color: green;
+}
+
+.menu__botao--login:hover {
+	background-color: #0e6400;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+/*******************\
+ APRESENTAÇÃO
+\*******************/
+.apresentacao {
+	color: #150F80;
+
+	text-align: center;
+	font-family: "Bree Serif", Helvetica, sans-serif;
+	font-size: 2rem;
+}
+
+.apresentacao__titulo {
+	letter-spacing: 0.1em;
+	font-size: 3.5em;
+}
+
+.apresentacao__subtitulo {
+	padding-bottom: 20px;
+
+	font-weight: bold;
+	font-size: 1.85em;
+}
+
+.apresentacao__botao-cad {
+	display: inline-block;
+	padding: 5%;
+
+	color: #FFF;
+	background-color: green;
+
+	font-size: 1.1em;
+
+	border-radius: 5px;
+}
+
+.apresentacao__botao-cad:hover, .apresentacao__botao-cad:focus { 
+	background-color: #0e6400;
+	color: white;
+	text-decoration: none;
 }
 
 @media (min-width: 768px) {
-	.apresentacao a {
+	.apresentacao__botao-cad {
 		padding: 2%;
 		margin-top: 3%;
 	}
 }
-/* FINAL DA PARTE DE APRESENTAÇÃO - PRINCIPAL */
 
 
-.chamativos {
-	margin-top: 70px;
-	margin-bottom: 70px;
-	background-color: white;
-}
 
-article img {
-	margin: 5px 0px;
-	position: relative;
-	left: 130px;
-}
-
-article {
-	background-color: #f8feff;
-	width: 340px;
-	margin: 50px 27px;
-	display: inline-block;
-	border-top: 1px solid green;
-}
-
-article > p {
-	color: green;
-	font-size: 27px;
-	font-family: "Bree Serif", sans-serif;
-	word-spacing: 0.1em;
-	line-height: 1.5em;
-	border: 5px solid #4c2daa;
-	height: 180px;
-	width: 340px;
-	padding: 5px 10px;
-	text-align: center;
-}
-
-/* COMEÇO DOS PLANOS */
-.plan {
-	text-align: center;
-	font-family: "Bree Serif", Helvetica, sans-serif;
-	font-size: 150%;
+/*******************\
+ PLANOS
+\*******************/
+.plano {
 	margin: 5% 0;
-	padding: 3%;
+
 	background-color: #f8feff;
-	border-right: 2px solid darkcyan;
+
+	text-align: center;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+	font-size: 2rem;
 }
 
-.plan li {
+.plano__titulo {
+	padding: 2%;
+	font-size: 1.7em;
+	background-color: #CCC;
+}
+
+.plano__preco {
+	margin: 7% 0 7% 0;
+	font-size: 1.5em;
+}
+
+.plano__caracteristicas > li {
 	padding: 1% 0;
+
+	font-size: 1.9rem;
+	font-family: "Bree", Helvetica, sans-serif;
+
 	list-style: none;
 	border-bottom: 1px solid green;
 }
 
-.plan h2 {
-	font-size: 210%;
-	background-color: #CCC;
-	margin-top: 0;
-}
-
-.plan h3 {
-	margin: 4% 0 4% 0;
-	font-size: 180%;
-}
-
-.plan a {
+.botao {
 	display: inline-block;
-	margin-top: 3%;
-	padding: 3%;
+	margin: 5% 0;
+	padding: 4% 8%;
+	
 	background-color: darkcyan;
 	color: #FFF;
 }
 
-.plan a:hover {
+.botao:hover, .botao:focus {
 	text-decoration: none;
+	
 	background-color: #0e6400;
+	color: #FFF;
 }
 
 @media (max-height: 800px) {
-	.plan {
-		border-bottom: 5px solid #CCC;
+	.plano {
+		border-bottom: 3px solid green;
 		border-right: 0;
 	}
 }
-/* FINAL DOS PLANOS */
 
 
-.contact {
-	font-family: "Roboto", serif;
-	padding: 5px 0 2px 5px;
-	font-size: 19px;
-	font-weight: bold;
-	width: 140px;
-	color: DarkMagenta;
-	border-bottom: 2px solid black;
-	margin-bottom: 2px;
+
+
+
+
+
+
+
+
+/*******************\
+ FORMULÁRIO
+\*******************/
+.titulo-formulario {
+	margin: 0;
+	margin-bottom: 40px;
+
+	border-bottom: 1px solid #CCC;
+
+	font-size: 2.6rem;
+	font-weight: normal;
+	color: #004b86;
 }
 
-.img-cont {
-	margin: 10px 5px;
+.botao--formulario {
+	border: none;
+	font-size: 1.8rem;
+	padding: 16px 12px;
+}
+
+/*******************\
+ GRUPO - ENTRADA
+\*******************/
+.grupo-entrada {
+	margin-bottom: 15px;
+}
+
+
+.grupo-entrada > label {
+	display: block;
+
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+
+/*******************\
+ CAMPO - FORMULARIO
+\*******************/
+.campo {
+	display: block;
+	width: 100%;
+	height: 2.8em;
+
+	font-size: 1.4rem;
+	padding: 5px;
+
+	background-color: #FFF;
+
+	border: 1px solid #CCC;
+	border-radius: 5px;
 }
