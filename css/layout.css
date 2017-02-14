@@ -1,0 +1,30 @@
+.layout-cabecalho {
+	height: 80px;
+	line-height: 80px;
+
+	background-color: #fff;
+}
+
+.layout-cabecalho--home {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.layout-apresentacao {
+	background-image: url(../pics/background-planeta.jpg);
+	background-size: cover;
+	background-position: center;
+
+	padding: 5% 0;
+}
+
+.layout-planos {
+	height: 1000px;
+}
+
+.layout-assinatura {
+	padding: 40px 0;
+}
