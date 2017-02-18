@@ -22,9 +22,14 @@
 }
 
 .layout-planos {
-	height: 1000px;
+	margin: 5% 0;
 }
 
 .layout-assinatura {
 	padding: 40px 0;
+}
+
+.layout-rodape {
+	height: 70px;
+	background: url(../Images/background-footer.jpg) right;
 }

@@ -174,7 +174,7 @@ body {
 
 @media (min-width: 768px) {
 	.apresentacao__botao-cad {
-		padding: 2%;
+		padding: 1.5%;
 		margin-top: 3%;
 	}
 }
@@ -201,7 +201,11 @@ body {
 }
 
 .plano__preco {
-	margin: 7% 0 7% 0;
+	border-left: 1px solid green;
+	border-right: 1px solid green;
+	border-bottom: 1px solid green;
+
+	padding: 7% 0 7% 0;
 	font-size: 1.5em;
 }
 
@@ -209,10 +213,14 @@ body {
 	padding: 1% 0;
 
 	font-size: 1.9rem;
-	font-family: "Bree", Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 
 	list-style: none;
-	border-bottom: 1px solid green;
+	border: 1px solid green;
+}
+
+.plano__rodape {
+	border: 1px solid green;
 }
 
 .botao {
@@ -220,7 +228,7 @@ body {
 	margin: 5% 0;
 	padding: 4% 8%;
 	
-	background-color: darkcyan;
+	background-color: green;
 	color: #FFF;
 }
 
@@ -231,19 +239,12 @@ body {
 	color: #FFF;
 }
 
-@media (max-height: 800px) {
+@media (max-height: 768px) {
 	.plano {
-		border-bottom: 3px solid green;
+		border-bottom: 2px solid green;
 		border-right: 0;
 	}
 }
-
-
-
-
-
-
-
 
 
 
@@ -256,15 +257,21 @@ body {
 
 	border-bottom: 1px solid #CCC;
 
+	color: black;
+
+	font-family: "Roboto", Helvetica, sans-serif;
 	font-size: 2.6rem;
 	font-weight: normal;
-	color: #004b86;
 }
 
 .botao--formulario {
 	border: none;
+
+
+	margin-top: 10px;
+	padding: 16px 25px;
+
 	font-size: 1.8rem;
-	padding: 16px 12px;
 }
 
 /*******************\
@@ -273,7 +280,6 @@ body {
 .grupo-entrada {
 	margin-bottom: 15px;
 }
-
 
 .grupo-entrada > label {
 	display: block;
@@ -288,14 +294,29 @@ body {
 \*******************/
 .campo {
 	display: block;
-	width: 100%;
+	width: 80%;
 	height: 2.8em;
 
 	font-size: 1.4rem;
 	padding: 5px;
-
-	background-color: #FFF;
-
+	
 	border: 1px solid #CCC;
 	border-radius: 5px;
+}
+
+
+/*******************\
+ RODAPÉ
+\*******************/
+.rodape__copyrights {
+	text-align: center;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+	font-size: 1.4rem;
+
+
+	color: white;
+}
+
+.contato {
+	text-align: center;
 }
