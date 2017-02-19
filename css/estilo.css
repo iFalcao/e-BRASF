@@ -51,7 +51,7 @@ body {
 .menu {
 	margin: 0;
 
-	font-family: Raleway, Helvetica, sans-serif;
+	font-family: "Raleway", Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 1.7rem;
 	list-style: none;
@@ -138,18 +138,19 @@ body {
 	color: #150F80;
 
 	text-align: center;
-	font-family: "Bree Serif", Helvetica, sans-serif;
 	font-size: 2rem;
 }
 
 .apresentacao__titulo {
 	letter-spacing: 0.1em;
-	font-size: 3.5em;
+	font-size: 3.8em;
+	font-family: "Bree Serif", Helvetica, sans-serif;
 }
 
 .apresentacao__subtitulo {
 	padding-bottom: 20px;
 
+	font-family: "Raleway", Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 1.85em;
 }
@@ -161,6 +162,7 @@ body {
 	color: #FFF;
 	background-color: green;
 
+	font-family: "Raleway", Helvetica, sans-serif;
 	font-size: 1.1em;
 
 	border-radius: 5px;
@@ -180,6 +182,43 @@ body {
 }
 
 
+/*******************\               **********************\     .
+ OBJETIVO                   &&&&&	 COMPROMISSO
+\*******************                **********************/
+.objetivo__titulo, .comp-social__titulo {
+	margin-top: 20px;
+
+	font-size: 4.3rem;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+}
+
+.objetivo__paragrafo, .comp-social__paragrafo {
+	margin-top: 1rem;
+	margin-left: 1rem;
+
+	line-height: 1.6em;
+
+	font-size: 2rem;
+	text-align: justify;
+	font-family: "Raleway", Helvetica, sans-serif;
+}
+
+.objetivo {
+	padding-right: 45px;
+	border-right: 1px solid black;
+}
+
+@media (min-width: 992px) {
+	.comp-social--direita {
+		text-align: right;
+	}
+
+	.comp-social {
+		padding-left: 25px;
+	}
+}
+
+
 
 /*******************\
  PLANOS
@@ -192,6 +231,16 @@ body {
 	text-align: center;
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	font-size: 2rem;
+}
+
+.planos__titulo {
+	border-bottom: 1px solid black;
+
+	margin-left: 10px;
+
+	letter-spacing: 0.1em;
+	font-size: 3.1em;
+	font-family: "Raleway", Helvetica, sans-serif;
 }
 
 .plano__titulo {
@@ -228,6 +277,8 @@ body {
 	margin: 5% 0;
 	padding: 4% 8%;
 	
+	font-family: "Comfortaa", Helvetica, sans-serif;
+
 	background-color: green;
 	color: #FFF;
 }
@@ -251,6 +302,11 @@ body {
 /*******************\
  FORMULÁRIO
 \*******************/
+.img-logomarca {
+	display: block;
+	margin: 0 auto;
+}
+
 .titulo-formulario {
 	margin: 0;
 	margin-bottom: 40px;
@@ -267,12 +323,12 @@ body {
 .botao--formulario {
 	border: none;
 
+	margin: 5px 0 0 0;
+	padding: 16px 35px;
 
-	margin-top: 10px;
-	padding: 16px 25px;
-
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
+
 
 /*******************\
  GRUPO - ENTRADA
@@ -313,8 +369,13 @@ body {
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	font-size: 1.4rem;
 
-
 	color: white;
+}
+
+@media (height: 950px) {
+	.rodape--assine {
+		margin-top: 190px;
+	}
 }
 
 .contato {
