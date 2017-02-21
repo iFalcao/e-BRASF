@@ -181,15 +181,38 @@ body {
 	}
 }
 
+/*******************\
+ FEATURES
+\*******************/
+.features__titulo {
+	margin-top: 25px;
+
+	font-size: 3.3rem;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+	word-spacing: 0.1em;
+	text-align: center;
+
+	color: green;
+}
+
+
+
+
+
+
+
 
 /*******************\               **********************\     .
- OBJETIVO                   &&&&&	 COMPROMISSO
+ OBJETIVO                &&&&&	    COMPROMISSO SOCIAL
 \*******************                **********************/
 .objetivo__titulo, .comp-social__titulo {
 	margin-top: 20px;
 
+	
 	font-size: 4.3rem;
 	font-family: "Comfortaa", Helvetica, sans-serif;
+
+	color: green;
 }
 
 .objetivo__paragrafo, .comp-social__paragrafo {
@@ -199,8 +222,11 @@ body {
 	line-height: 1.6em;
 
 	font-size: 2rem;
+	font-weight: bold;
 	text-align: justify;
 	font-family: "Raleway", Helvetica, sans-serif;
+
+	color: black;
 }
 
 .objetivo {
@@ -214,7 +240,7 @@ body {
 	}
 
 	.comp-social {
-		padding-left: 25px;
+		padding-left: 15px;
 	}
 }
 
@@ -241,6 +267,8 @@ body {
 	letter-spacing: 0.1em;
 	font-size: 3.1em;
 	font-family: "Raleway", Helvetica, sans-serif;
+
+	color: green;
 }
 
 .plano__titulo {
