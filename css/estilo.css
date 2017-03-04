@@ -108,7 +108,7 @@ body {
 	color: darkcyan;
 }
 
-.menu__botao--login {
+.menu__botao--contato {
 	padding: 14px 16px;
 	border-radius: 5px;
 	margin-top: 20px;
@@ -122,7 +122,7 @@ body {
 	text-decoration: none;
 }
 
-.menu__botao--login:hover {
+.menu__botao--contato:hover {
 	background-color: #0e6400;
 	color: white;
 	text-decoration: none;
@@ -155,31 +155,8 @@ body {
 	font-size: 1.85em;
 }
 
-.apresentacao__botao-cad {
-	display: inline-block;
-	padding: 5%;
 
-	color: #FFF;
-	background-color: green;
 
-	font-family: "Raleway", Helvetica, sans-serif;
-	font-size: 1.1em;
-
-	border-radius: 5px;
-}
-
-.apresentacao__botao-cad:hover, .apresentacao__botao-cad:focus { 
-	background-color: #0e6400;
-	color: white;
-	text-decoration: none;
-}
-
-@media (min-width: 768px) {
-	.apresentacao__botao-cad {
-		padding: 1.5%;
-		margin-top: 3%;
-	}
-}
 
 /*******************\
  FEATURES
@@ -194,10 +171,6 @@ body {
 
 	color: green;
 }
-
-
-
-
 
 
 
@@ -356,7 +329,9 @@ body {
 
 	font-size: 2rem;
 }
-
+.botao--formulario:hover {
+	border-radius: 50%;
+}
 
 /*******************\
  GRUPO - ENTRADA
