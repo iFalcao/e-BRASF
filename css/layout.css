@@ -38,6 +38,12 @@
 }
 
 .layout-rodape {
-	height: 70px;
+	height: 90px;
 	background: url(../Images/background-footer.jpg) right;
+}
+@media (max-height: 374px) {
+	.layout-rodape {
+		height: 110px;
+		background: url(../Images/background-footer.jpg) right;
+	}
 }

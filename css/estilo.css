@@ -60,7 +60,7 @@ body {
 @media(max-width: 991px) {
 	.menu {
 		position: fixed;
-		top: 80px;
+		top: 60px;
 		right: 0;
 		bottom: 0;
 
@@ -388,24 +388,53 @@ body {
 	border-radius: 5px;
 }
 
+/*******************\
+ MAPS
+\*******************/
+.titulo-maps{
+	padding-left: 10px;
+	
+	font-family: "Roboto Mono", Helvetica, sans-serif;
+	font-size: 1.4em;
+
+	color: darkMagenta;
+}
+
+#map {
+	height: 300px;
+	margin: 15px 0 50px 0;
+}
+
+
 
 /*******************\
  RODAPÉ
 \*******************/
 .rodape__copyrights {
+	padding-top: 15px;
+
 	text-align: center;
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	font-size: 1.4rem;
+	line-height: 1.5em;
 
 	color: white;
 }
-
-@media (height: 950px) {
-	.rodape--assine {
-		margin-top: 190px;
+@media (max-height: 374px) {
+	.rodape__copyrights {
+		font-size: 1.3rem;
+		line-height: 2em;
 	}
 }
 
-.contato {
-	text-align: center;
+.botao-rodape {
+	color: orange;
+	border-bottom: 1px solid orange;
+	padding-bottom: 5px;
+}
+
+.botao-rodape:hover {
+	color: green;
+	text-decoration: none;
+	border-bottom: 0;
 }

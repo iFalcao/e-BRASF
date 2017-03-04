@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway|Roboto+Mono" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -147,19 +147,24 @@
 			</div>
 		</div>
 
+		<!-- API do Google Maps -->
+		<h3 class="titulo-maps">Nossa Localização</h3>
+		<div id="map"></div>
+
 		<div class="layout-rodape">
 			<div class="container-fluid">
 				<footer class="rodape">
-					<p class="rodape__copyrights">&copy;2017 | Todos os direitos reservados</p>
-					<article class="contato">
-					<a href="https://www.facebook.com/suzart.falcao"><img src="Images/facebook-logo.png" alt="Facebook logo logomarca link" height="40" width="40"></a>
-					<a href="mailto:vbsfalcao@gmail.com"><img src="Images/gmail-logo.png" alt="Gmail email logo logormarca link" height="40" width="40"></a>
-					<a href="https://twitter.com/I_Falcao"><img src="Images/twitter-logo.png" alt="Facebook logo logomarca" height="40" width="40"></a>
-					</article>
+					<p class="rodape__copyrights">&copy;2017 | Todos os direitos reservados<br>Desenvolvido e Projetado por Ícaro Falcão<br><a class="botao-rodape" href="mailto:vbsfalcao@gmail.com">Contato</a></p>
 				</footer>
 			</div>
 		</div>
 
 		<script src="javascript/app.js"></script>
+		
+
+		<script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ng6Y24vl6yat4DUfrVVmwpaSCjAh5nQ&callback=initMap">
+	    </script>
+
 	</body>
 </html>
