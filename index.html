@@ -17,7 +17,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="Images/icons/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="Images/icons/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="Images/icons/favicon-16x16.png">
-		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
@@ -25,55 +25,97 @@
 	</head>
 	<body>
 		
-		<header class="layout-cabecalho  layout-cabecalho--home"> 
-			<div class="container">
-				<nav class="navegacao">
-					<span class="cabecalho__logo--letras">BR <img src="Images/logo-principal.png" height="50" alt="Logomarca BRASF"> SF</span>
-					
-					<div class="navegacao__menu">
-						<button class="botao-chaveador  js-chave">
-							<img src="Images/menu.png" height="50" width="50" alt="botao-chaveador">	
-						</button>
+		<!-- INÍCIO DA PÁGINA PRINCIPAL -->
+		<div id="pagina-principal">
+			<!-- INÍCIO DO NAVEGADOR -->
+			<header class="layout-cabecalho  layout-cabecalho--home"> 
+				<div class="container">
+					<nav class="navegacao">
+						<span class="cabecalho__logo--letras">BR<img src="Images/logo-principal.png" height="50" alt="Logomarca BRASF">SF</span>
 						
-						<ul class="menu  js-menu">
-							<li class="menu__item"> 
-								<a class="menu__botao" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Produtos</a> 
-							</li>
-							<li class="menu__item"> 
-								<a class="menu__botao" href="#saiba-mais"><i class="fa fa-info-circle" aria-hidden="true"></i> Saiba Mais</a> 
-							</li>
-							<li class="menu__item"> 
-								<a class="menu__botao" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contato</a>   
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</header>
-		
-		
-		<div class="layout-apresentacao">
-			<div class="container">
+						<div class="navegacao__menu">
+							<button class="botao-chaveador  js-chave">
+								<img src="Images/menu.png" height="50" width="50" alt="botao-chaveador">
+							</button>
+							<button class="botao-chaveador  js-fechar">
+								<i class="fa  fa-times  fa-4x" aria-hidden="true"></i>	
+							</button>
+							
+							<ul class="menu  js-menu">
+								<li class="menu__item"> 
+									<a class="menu__botao" title="Conheça nossos produtos" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Produtos</a> 
+								</li>
+								<li class="menu__item"> 
+									<a class="menu__botao" title="Mais informações" href="#saiba-mais"><i class="fa fa-info-circle" aria-hidden="true"></i> Saiba Mais</a> 
+								</li>
+								<li class="menu__item"> 
+									<a class="menu__botao" title="Entre em contato" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contato</a>   
+								</li>
+								<li class="menu__item">
+									<form>
+										<label class="menu__campo">
+											<button type="submit" class="btn btn-default menu__botao--pesquisa"><i class="fa fa-search" aria-hidden="true"></i> </button> <input type="text" name="procurar" placeholder="Pesquisar..." class="menu__pesquisa">
+										</label>
+									</form>
+								</li>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!-- FINAL DO NAVEGADOR -->
+
+			<!-- INÍCIO DA APRESENTAÇÃO -->
+			<div class="layout-apresentacao">
+				<div class="container">
 					<div class="apresentacao">
-						<h1 class="apresentacao__titulo">BRASF</h1>
-						<h2 class="apresentacao__subtitulo">Venha fazer parte do grupo<br>que mais une em harmonia no Brasil</h2>
+						<h1 class="apresentacao__titulo">Título Principal</h1>
+						<h2 class="apresentacao__subtitulo">Oferecemos <span class="typed"> </span></h2>
+						<h4>Aqui pode ter um vídeo ou mais informações</h4>
 					</div>
+				</div>
 			</div>
+
 		</div>
-		
+		<!-- FINAL DA APRESENTAÇÃO -->
+		<!-- FINAL DA PÁGINA PRINCIPAL -->
 
 
 		<!-- API do Google Maps -->
-		<h3 class="titulo-maps">Nossa Localização:</h3>
+		<h3 class="titulo-maps">Contato</h3>
 		<div id="map"></div>
+		<!-- Fim da API do Google Maps -->
 
 
+		<!-- Início do Rodapé -->
+		<div class="layout-rodape">
+			<div class="container-fluid">
+				<h4 class="rodape__principal">Developed by Ícaro Falcão. 2017 &copy; All Rights reserved</h4>
+			</div>
+		</div>
+		<!-- Fim do Rodapé -->
+
+
+		<!-- 
+			FINAL DA PÁGINA
+				SCRIPTS ABAIXO
+			 				-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="javascript/app.js"></script>
-		
-
+		<script src="javascript/typed.js"></script>
+		<script>
+          $(function(){
+              $(".typed").typed({
+                strings: ["^400soluções^400", "produtos^400", "melhorias^400"],
+                backSpeed: 35,
+                typeSpeed: 35,
+                loop: true
+              });
+          });
+        </script>
 		<script async defer
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ng6Y24vl6yat4DUfrVVmwpaSCjAh5nQ&callback=initMap">
 	    </script>
-
 	</body>
 </html>

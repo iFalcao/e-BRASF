@@ -1,3 +1,6 @@
+/*******************\
+ GLOBAL
+\*******************/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -17,8 +20,6 @@ body {
 	font-size: 50px;
 }
 
-
-
 /*******************\
  NAVEGAÇÃO
 \*******************/
@@ -28,9 +29,6 @@ body {
 .navegacao__menu {
 	float: right;
 }
-
-
-
 
 /*******************\
  BOTÃO DE NAVEGAÇÃO
@@ -66,20 +64,20 @@ body {
 	.menu {
 		position: fixed;
 		z-index: 900;
-		top: 65px;
+		top: 60px;
 		right: 1px;
 		bottom: 0;
 
 		display: none;
-		height: 200px;
-		width: 200px;
+		height: 180px;
+		width: 170px;
 		margin: 0;
+		padding-left: 15px;
 
-		border: 2px solid #eee;
-		background-color: #fbfbfb;
+		background-color: rgb(92, 156, 171);
 
-		font-size: 1.4rem;
-		text-align: center;
+		font-size: 1rem;
+		text-align: justify;
 
 		list-style: none;
 	}
@@ -87,14 +85,18 @@ body {
 	.menu__item{
 		display: block;
 		
-		font-size: 1.9rem;
-		line-height: 3;
+		font-size: 1.6em;
+		line-height: 2.4;
 
 		list-style: none;
 	}
 
 	.menu--exibindo {
 		display: block;
+	}
+
+	.js-fechar {
+		display: none;
 	}
 }
 
@@ -121,10 +123,36 @@ body {
 }
 
 .menu__botao:hover {
-	color: DarkMagenta;
+	color: white;
 	text-decoration: none;
 }
 
+/*******************\
+ CAMPO DE PESQUISA
+\*******************/
+.menu__pesquisa {
+	width: 100px;
+
+	font-weight: normal;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+.menu__botao--pesquisa {
+	background: black;
+	color: white;
+	border: 0;
+
+	outline: none;
+}
+
+@media(min-width: 768px) {
+	.menu__pesquisa {
+		width: 180px;
+
+		line-height: 2;
+	}
+}
 
 
 
@@ -132,7 +160,7 @@ body {
  APRESENTAÇÃO
 \*******************/
 .apresentacao {
-	color: #150F80;
+	color: white;
 
 	text-align: center;
 	font-size: 2rem;
@@ -152,6 +180,43 @@ body {
 	font-size: 1.85em;
 }
 
+@media (max-width: 767px) {
+	.apresentacao {
+		font-size: 1em;
+	}
+	.apresentacao__titulo  {
+		font-size: 3.5em;
+	}
+	.apresentacao__subtitulo  {
+		font-size: 1.8em;
+	}
+}
+
+/*******************\
+ TYPED
+\*******************/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 /*******************\
  MAPS
 \*******************/
@@ -164,9 +229,16 @@ body {
 	color: darkMagenta;
 }
 
-#map {
-	height: 300px;
+
+
+/*******************\
+ RODAPÉ
+\*******************/
+.rodape__principal {
+	padding: 15px;
+
+	text-align: center;
+	font-family: "Raleway", Helvetica, sans-serif;
+
+	color: white;
 }
-
-
-

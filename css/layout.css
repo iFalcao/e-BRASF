@@ -1,8 +1,16 @@
+#pagina-principal {
+	margin-top: 60px;
+
+	background-image: url(../Images/background-planeta.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
 .layout-cabecalho {
 	height: 60px;
 	line-height: 60px;
 
-	box-shadow: 1px 6px 14px #888 ;
 	background-color: rgba(92, 156, 171, 0.9);
 }
 
@@ -10,34 +18,27 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	left: 0;
+	left: 0; 
 	z-index: 9999;
 }
 
 .layout-apresentacao {
-	background-image: url(../Images/background-planeta.jpg);
-	background-size: cover;
-	background-position: center;
-
-	margin-top: 60px;
-	padding: 5% 0;
+	padding: 10% 0 9% 0;
 }
 
-.layout-objetivo {
-	margin: 50px 0;
 
-	background-color: rgba(92, 156, 171, 0.9);
-}
-
-.layout-planos {
-	margin: 5% 0;
-
-	background-color: rgba(92, 156, 171, 0.9);
-}
-
-@media (max-height: 374px) {
-	.layout-rodape {
-		height: 110px;
-		background: url(../Images/background-footer.jpg) right;
+@media(max-width: 767px) {
+	.layout-apresentacao {
+		padding: 5px 0 5px 0;
+		margin-top: 6px;
 	}
+}
+
+#map {
+	height: 300px;
+	width: 300px;
+}
+
+.layout-rodape {
+	background-color: rgba(92, 156, 171, 0.9);
 }
