@@ -4,20 +4,31 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BRASF | União Global</title>
-		<link rel="icon" href="Images/favicon-16x16.png">
-		<link rel="icon" href="Images/favicon-32x32.png">
-		<link rel="icon" href="Images/favicon-96x96.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="Images/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="Images/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="Images/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="Images/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="Images/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="Images/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="Images/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="Images/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="Images/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="Images/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="Images/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Images/icons/favicon-16x16.png">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway|Roboto+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway|Roboto+Mono|Faster+One" rel="stylesheet">
 	</head>
 	<body>
 		
 		<header class="layout-cabecalho  layout-cabecalho--home"> 
 			<div class="container">
 				<nav class="navegacao">
-					<img src="Images/logo_medium.png" height="50" alt="Logomarca BRASF">
+					<span class="cabecalho__logo--letras">BR <img src="Images/logo-principal.png" height="50" alt="Logomarca BRASF"> SF</span>
 					
 					<div class="navegacao__menu">
 						<button class="botao-chaveador  js-chave">
@@ -26,16 +37,13 @@
 						
 						<ul class="menu  js-menu">
 							<li class="menu__item"> 
-								<a class="menu__botao" href="#">Produtos</a> 
+								<a class="menu__botao" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Produtos</a> 
 							</li>
 							<li class="menu__item"> 
-								<a class="menu__botao" href="#saiba-mais">Saiba Mais</a> 
+								<a class="menu__botao" href="#saiba-mais"><i class="fa fa-info-circle" aria-hidden="true"></i> Saiba Mais</a> 
 							</li>
 							<li class="menu__item"> 
-								<a class="menu__botao" href="#planos">Planos</a>
-							</li>
-							<li class="menu__item"> 
-								<a class="menu__botao  menu__botao--contato" href="assine.html">Contato</a>   
+								<a class="menu__botao" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contato</a>   
 							</li>
 						</ul>
 					</div>
@@ -54,98 +62,11 @@
 		</div>
 		
 
-		<div id="saiba-mais" class="layout-objetivo">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="objetivo">
-							<h2 class="objetivo__titulo">Objetivo</h2>
-							<p class="objetivo__paragrafo">O objetivo da BRASF é conectar as pessoas através de produtos. Buscamos oferecer as melhores opções tanto para compradores quanto para vendedores. Fazemos essa ligação pensando em ambos os lados e ajudamos com as melhores opções para cada pessoa.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="comp-social">
-							<h2 class="comp-social__titulo  comp-social--direita">Compromisso</h2>
-							<p class="comp-social__paragrafo">Temos o comprometimento de ajudar causas significantes para a sociedade, portanto uma % do nosso lucro mensal é revestida para a caridade. Além disso, sempre que o nosso lucro aumenta, o mesmo ocorre com essa porcentagem de ajuda.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="planos" class="layout-planos">
-			<div class="container">
-				<div class="row">
-					<h1 class="planos__titulo">Planos</h1>
-					<div class="col-md-4">
-						<article class="plano">
-							<h2 class="plano__titulo">Micro</h2>
-							<h3 class="plano__preco">R$ 49/mês</h3>
-							<ul class="plano__caracteristicas">
-								<li class="plano__caracteristicas--primeiro">Sem página própria</li>
-								<li>Presente em alguns MarketPlaces</li>					
-								<li>Acesso seguro</li>
-								<li>Sem Fidelidade</li>
-								<li>1 Banco de Dados</li>
-								<li class="plano__caracteristicas--ultimo">Acompanhamento mensal das vendas</li>
-							</ul>
-							<footer class="plano__rodape">
-								<a class="botao" href="assine.html">Assine</a>
-							</footer>
-						</article>
-					</div>
-						
-					<div class="col-md-4">
-						<article class="plano">
-							<h2 class="plano__titulo">Pequena</h2>
-							<h3 class="plano__preco">R$ 79/mês</h3>
-							<ul class="plano__caracteristicas">
-								<li class="plano__caracteristicas--primeiro">e-Commerce</li>
-								<li>Presente em alguns MarketPlaces</li>
-								<li>Acesso seguro</li>
-								<li>Sem Fidelidade</li>
-								<li>3 Bancos de Dados</li>
-								<li class="plano__caracteristicas--ultimo">Acompanhamento semanal das vendas</li>
-							</ul>
-							<footer class="plano__rodape">
-								<a class="botao" href="assine.html">Assine</a>
-							</footer>
-						</article>
-					</div>
-					
-					<div class="col-md-4" style="border-right: 0">
-						<article class="plano">
-							<h2 class="plano__titulo">Grande</h2>
-							<h3 class="plano__preco">R$ 129/mês</h3>
-							<ul class="plano__caracteristicas">
-								<li class="plano__caracteristicas--primeiro">e-Commerce</li>
-								<li>Presente em todos MarketPlaces</li>
-								<li>Acesso seguro</li>
-								<li>Sem Fidelidade</li>
-								<li>5 Bancos de Dados</li>
-								<li class="plano__caracteristicas--ultimo">Acompanhamento diário das vendas</li>
-							</ul>
-							<footer class="plano__rodape">
-								<a class="botao" href="assine.html">Assine</a>
-							</footer>
-						</article>
-					</div>
-				
-				</div>	
-			</div>
-		</div>
 
 		<!-- API do Google Maps -->
-		<h3 class="titulo-maps">Nossa Localização</h3>
+		<h3 class="titulo-maps">Nossa Localização:</h3>
 		<div id="map"></div>
 
-		<div class="layout-rodape">
-			<div class="container-fluid">
-				<footer class="rodape">
-					<p class="rodape__copyrights">&copy;2017 | Todos os direitos reservados<br>Desenvolvido e Projetado por Ícaro Falcão<br><a class="botao-rodape" href="mailto:vbsfalcao@gmail.com">Contato</a></p>
-				</footer>
-			</div>
-		</div>
 
 		<script src="javascript/app.js"></script>
 		

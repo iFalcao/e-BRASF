@@ -4,12 +4,17 @@
 	padding: 0;
 }
 
-html {
-	font-size: 62.5%;
-}
-
 body {
 	font-family: Helvetica, sans-serif;
+}
+
+
+/*******************\
+ CABEÇALHO
+\*******************/
+.cabecalho__logo--letras {
+	font-family: "Faster One", cursive;
+	font-size: 50px;
 }
 
 
@@ -60,16 +65,17 @@ body {
 @media(max-width: 991px) {
 	.menu {
 		position: fixed;
-		top: 60px;
-		right: 0;
+		z-index: 900;
+		top: 65px;
+		right: 1px;
 		bottom: 0;
 
 		display: none;
-		height: 250px;
+		height: 200px;
 		width: 200px;
 		margin: 0;
-		border: 2px solid #eee;
 
+		border: 2px solid #eee;
 		background-color: #fbfbfb;
 
 		font-size: 1.4rem;
@@ -95,7 +101,7 @@ body {
 @media(min-width: 992px) {
 	.menu__item {
 		display: inline-block;
-		padding: 0 10px;
+		padding: 0 20px;
 	}
 
 	.menu__botao--right {
@@ -103,28 +109,19 @@ body {
 	}
 }
 
-.menu__botao {
-	text-decoration: none;
-	color: darkcyan;
+.fa {
+	padding-right: 2px;
 }
 
-.menu__botao--contato {
-	padding: 14px 16px;
-	border-radius: 5px;
-	margin-top: 20px;
+.menu__botao {
+	text-decoration: none;
+	font-size: 1.16em;
 
-	background-color: green;
-	color: #FFF;
+	color: black;
 }
 
 .menu__botao:hover {
 	color: DarkMagenta;
-	text-decoration: none;
-}
-
-.menu__botao--contato:hover {
-	background-color: #0e6400;
-	color: white;
 	text-decoration: none;
 }
 
@@ -155,261 +152,21 @@ body {
 	font-size: 1.85em;
 }
 
-
-
-
-/*******************\
- FEATURES
-\*******************/
-.features__titulo {
-	margin-top: 25px;
-
-	font-size: 3.3rem;
-	font-family: "Comfortaa", Helvetica, sans-serif;
-	word-spacing: 0.1em;
-	text-align: center;
-
-	color: green;
-}
-
-
-
-
-/*******************\               **********************\     .
- OBJETIVO                &&&&&	    COMPROMISSO SOCIAL
-\*******************                **********************/
-.objetivo__titulo, .comp-social__titulo {
-	margin-top: 20px;
-
-	
-	font-size: 4.3rem;
-	font-family: "Comfortaa", Helvetica, sans-serif;
-
-	color: green;
-}
-
-.objetivo__paragrafo, .comp-social__paragrafo {
-	margin-top: 1rem;
-	margin-left: 1rem;
-
-	line-height: 1.6em;
-
-	font-size: 2rem;
-	font-weight: bold;
-	text-align: justify;
-	font-family: "Raleway", Helvetica, sans-serif;
-
-	color: black;
-}
-
-.objetivo {
-	padding-right: 45px;
-	border-right: 1px solid black;
-}
-
-@media (min-width: 992px) {
-	.comp-social--direita {
-		text-align: right;
-	}
-
-	.comp-social {
-		padding-left: 15px;
-	}
-}
-
-
-
-/*******************\
- PLANOS
-\*******************/
-.plano {
-	margin: 5% 0;
-
-	background-color: #f8feff;
-
-	text-align: center;
-	font-family: "Comfortaa", Helvetica, sans-serif;
-	font-size: 2rem;
-}
-
-.planos__titulo {
-	border-bottom: 1px solid black;
-
-	margin-left: 10px;
-
-	letter-spacing: 0.1em;
-	font-size: 3.1em;
-	font-family: "Raleway", Helvetica, sans-serif;
-
-	color: green;
-}
-
-.plano__titulo {
-	padding: 2%;
-	font-size: 1.7em;
-	background-color: #CCC;
-}
-
-.plano__preco {
-	border-left: 1px solid green;
-	border-right: 1px solid green;
-	border-bottom: 1px solid green;
-
-	padding: 7% 0 7% 0;
-	font-size: 1.5em;
-}
-
-.plano__caracteristicas > li {
-	padding: 1% 0;
-
-	font-size: 1.9rem;
-	font-family: Helvetica, sans-serif;
-
-	list-style: none;
-	border: 1px solid green;
-}
-
-.plano__rodape {
-	border: 1px solid green;
-}
-
-.botao {
-	display: inline-block;
-	margin: 5% 0;
-	padding: 4% 8%;
-	
-	font-family: "Comfortaa", Helvetica, sans-serif;
-
-	background-color: green;
-	color: #FFF;
-}
-
-.botao:hover, .botao:focus {
-	text-decoration: none;
-	
-	background-color: #0e6400;
-	color: #FFF;
-}
-
-@media (max-height: 768px) {
-	.plano {
-		border-bottom: 2px solid green;
-		border-right: 0;
-	}
-}
-
-
-
-/*******************\
- FORMULÁRIO
-\*******************/
-.img-logomarca {
-	display: block;
-	margin: 0 auto;
-}
-
-.titulo-formulario {
-	margin: 0;
-	margin-bottom: 40px;
-
-	border-bottom: 1px solid #CCC;
-
-	color: black;
-
-	font-family: "Roboto", Helvetica, sans-serif;
-	font-size: 2.6rem;
-	font-weight: normal;
-}
-
-.botao--formulario {
-	border: none;
-
-	margin: 5px 0 0 0;
-	padding: 16px 35px;
-
-	font-size: 2rem;
-}
-.botao--formulario:hover {
-	border-radius: 50%;
-}
-
-/*******************\
- GRUPO - ENTRADA
-\*******************/
-.grupo-entrada {
-	margin-bottom: 15px;
-}
-
-.grupo-entrada > label {
-	display: block;
-
-	font-weight: bold;
-	font-size: 1.6rem;
-}
-
-
-/*******************\
- CAMPO - FORMULARIO
-\*******************/
-.campo {
-	display: block;
-	width: 80%;
-	height: 2.8em;
-
-	font-size: 1.4rem;
-	padding: 5px;
-	
-	border: 1px solid #CCC;
-	border-radius: 5px;
-}
-
 /*******************\
  MAPS
 \*******************/
 .titulo-maps{
-	padding-left: 10px;
+	padding: 10px 0 0 10px;
 	
 	font-family: "Roboto Mono", Helvetica, sans-serif;
-	font-size: 1.4em;
+	font-size: 1.9em;
 
 	color: darkMagenta;
 }
 
 #map {
 	height: 300px;
-	margin: 15px 0 50px 0;
 }
 
 
 
-/*******************\
- RODAPÉ
-\*******************/
-.rodape__copyrights {
-	padding-top: 15px;
-
-	text-align: center;
-	font-family: "Comfortaa", Helvetica, sans-serif;
-	font-size: 1.4rem;
-	line-height: 1.5em;
-
-	color: white;
-}
-@media (max-height: 374px) {
-	.rodape__copyrights {
-		font-size: 1.3rem;
-		line-height: 2em;
-	}
-}
-
-.botao-rodape {
-	color: orange;
-	border-bottom: 1px solid orange;
-	padding-bottom: 5px;
-}
-
-.botao-rodape:hover {
-	color: green;
-	text-decoration: none;
-	border-bottom: 0;
-}

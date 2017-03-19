@@ -2,7 +2,8 @@
 	height: 60px;
 	line-height: 60px;
 
-	background-color: #fff;
+	box-shadow: 1px 6px 14px #888 ;
+	background-color: rgba(92, 156, 171, 0.9);
 }
 
 .layout-cabecalho--home {
@@ -18,25 +19,22 @@
 	background-size: cover;
 	background-position: center;
 
+	margin-top: 60px;
 	padding: 5% 0;
 }
 
 .layout-objetivo {
 	margin: 50px 0;
+
+	background-color: rgba(92, 156, 171, 0.9);
 }
 
 .layout-planos {
 	margin: 5% 0;
+
+	background-color: rgba(92, 156, 171, 0.9);
 }
 
-.layout-assinatura {
-	padding: 40px 0;
-}
-
-.layout-rodape {
-	height: 90px;
-	background: url(../Images/background-footer.jpg) right;
-}
 @media (max-height: 374px) {
 	.layout-rodape {
 		height: 110px;
