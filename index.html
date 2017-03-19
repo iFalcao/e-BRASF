@@ -21,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway|Roboto+Mono|Faster+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Raleway|Roboto+Mono|Faster+One|Acme" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -49,7 +49,7 @@
 									<a class="menu__botao" title="Mais informações" href="#saiba-mais"><i class="fa fa-info-circle" aria-hidden="true"></i> Saiba Mais</a> 
 								</li>
 								<li class="menu__item"> 
-									<a class="menu__botao" title="Entre em contato" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contato</a>   
+									<a class="menu__botao" title="Entre em contato" href="#contato"><i class="fa fa-phone" aria-hidden="true"></i> Contato</a>   
 								</li>
 								<li class="menu__item">
 									<form>
@@ -83,8 +83,31 @@
 
 
 		<!-- API do Google Maps -->
-		<h3 class="titulo-maps">Contato</h3>
-		<div id="map"></div>
+		<div class="layout-contato" id="contato">
+			<div class="container">
+				<h3 class="titulo-maps">CONTATO</h3>
+
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<div id="map"></div>
+					</div>
+
+					<div class="col-md-6">
+						<address class="contato__nome  contato__nome--first">
+						  <strong>Arnaldo Suzart Falcão - CEO</strong><br>
+						  <a class="contato__link-email" title="Enviar um e-mail para Arnaldo" href="mailto:arnaldosuzartfalcao@gmail.com">arnaldosuzartfalcao@gmail.com</a><br>
+						  <abbr title="Telefone para Contato">Tel:</abbr> (071) 98804-9658<br>
+						</address>
+						<adress  class="contato__nome">
+						  <strong>Ícaro Vilas Boas Suzart Falcão - CTO</strong><br>
+						  <a class="contato__link-email" title="Enviar um e-mail para Ícaro" href="mailto:vbsfalcao@gmail.com">vbsfalcao@gmail.com</a><br>
+						  <abbr title="Telefone para Contato">Tel:</abbr> (071) 98548-0549
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!-- Fim da API do Google Maps -->
 
 

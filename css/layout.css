@@ -34,6 +34,17 @@
 	}
 }
 
+.layout-contato {
+	width: auto;
+	padding: 30px 0;
+	margin: 25px 0;
+
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 1.2em;
+
+	background: url(../Images/header-bg.png) repeat center;
+}
+
 #map {
 	height: 300px;
 	width: 300px;

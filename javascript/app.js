@@ -13,7 +13,7 @@ $(document).ready( function() {
 });
 
 function initMap() {
-		var salvador = {lat: -12.977145, lng: -38.446708};
+		var salvador = {lat: -12.977145, lng: -38.445508};
 		var map = new google.maps.Map(document.getElementById('map'), {
 		    zoom: 15,
 		    center: salvador

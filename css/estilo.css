@@ -190,6 +190,10 @@ body {
 	.apresentacao__subtitulo  {
 		font-size: 1.8em;
 	}
+
+	.layout-contato {
+		background: url(../Images/header-bg.png) repeat center bottom;
+	}
 }
 
 /*******************\
@@ -218,18 +222,58 @@ body {
 }
 
 /*******************\
- MAPS
+ CONTATO
 \*******************/
 .titulo-maps{
-	padding: 10px 0 0 10px;
+	padding: 10px 0 20px 10px;
 	
-	font-family: "Roboto Mono", Helvetica, sans-serif;
+	text-align: center;
+	font-family: "Acme", Helvetica, sans-serif;
 	font-size: 1.9em;
 
-	color: darkMagenta;
+	color: white;
 }
 
+.titulo-maps::after {
+	content: "";
 
+	display: block;
+	width: 60px;
+	
+	margin: 15px auto 0 auto;
+
+	border: 1px solid white;
+}
+
+.contato__nome {
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+.contato__nome--first {
+	margin-top: 55px;
+}
+
+.contato__nome::after {
+	content: "";
+
+	display: block;
+	width: 100px;
+	
+	margin-top: 15px;
+
+	border: 1px solid black;
+}
+
+.contato__link-email {
+	color: white;
+	text-decoration: none;
+}
+
+.contato__link-email:hover {
+	text-decoration: none;
+	color: yellow;
+}
 
 /*******************\
  RODAPÉ
